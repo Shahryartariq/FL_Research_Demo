@@ -1,0 +1,21 @@
+Laplace mechanism, Exponential Mechanism and Gaussian Mechanism
+
+Laplace Mechanism:
+The Laplace mechanism adds noise from a Laplace distribution to the true query result.
+It involves generating random noise, usually using a pseudorandom number generator.
+The computational cost is primarily associated with generating the noise, which is relatively straightforward and efficient.
+
+
+Exponential Mechanism:
+The Exponential Mechanism is used for selecting elements from a dataset in a privacy-preserving manner based on their utility.
+It involves computing the utility of each element with respect to the query being performed, and then selecting elements probabilistically according to their utility.
+The computational cost can be higher compared to the Laplace mechanism, especially when dealing with large datasets or complex utility functions.
+
+
+Gaussian Mechanism:
+The Gaussian Mechanism adds noise from a Gaussian (normal) distribution to the true query result.
+It involves generating noise from a Gaussian distribution, which typically requires more computational resources compared to generating Laplace noise.
+Additionally, determining the appropriate scale parameter for the Gaussian distribution can be more involved compared to the Laplace mechanism.
+
+
+Laplace mechanism is often considered to be the least computationally expensive among these mechanisms

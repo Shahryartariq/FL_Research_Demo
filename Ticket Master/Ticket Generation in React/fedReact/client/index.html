@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Web3 Fed Avg dApp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav id="header" class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand">Fed</a>
+        <div id="account" class="d-flex"></div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="tickets"></div>
+        </div>
+
+
+
+        <div class="row g-3 align-items-center">
+          <div class="col-auto">
+            <label for="globalValueInputField" class="col-form-label">Enter Number</label>
+          </div>
+          <div class="col-auto">
+            <input type="text" id="globalValueInputField" class="form-control">
+          </div>
+          <div class="col-auto">
+            <label for="" class="col-form-label">Global Value: </label>
+            <label id="globalValueLabel" class="col-form-label"></label>
+          </div>
+
+          <div>
+            <button type="submit" id="submitGlobal" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

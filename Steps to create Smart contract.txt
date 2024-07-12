@@ -1,0 +1,102 @@
+1- Download Ganache and truffle
+
+2- create truffle project 
+truffle init
+	- contracts directory
+	- migration directory
+	- test directory
+	- truffle.config
+
+ Configure Truffle to Connect to Ganache GUI
+	module.exports = {
+  networks: {
+    development: {
+      host: "127.0.0.1",
+      port: 7545, // Default Ganache GUI port
+      network_id: "*", // Match any network id
+    },
+  },
+
+
+
+
+3- Create workspace ganache
+get limit
+and gas price 
+and other configurations
+give path to the truffle project config file
+start the workspace
+
+Ganacha cli and gui
+
+
+4- Create smart contract and also migrations directory that contain the migration
+
+
+4- Testing using different application like 
+Mocha - the fun, simple, flexible JavaScript test framework
+
+5- Compile the truffle project
+truffle compile
+
+if successfully you will see the contract in ganache smart contract tab
+
+
+6- Deploy the contract
+truffle migrate --network development
+
+Genesis Block is created in ganache blockchain
+everything is record in that blockchain log
+you will get contract address
+
+
+
+7- Interact with Your Smart Contract Using Web3
+install web3
+
+we need crypo wallet to connect with web3
+
+that why we use metamask
+
+8- Install and Connect Meta mask to dummy ganache blockchain
+Testnet / Mainnet
+
+
+Manually ADD
+-Network name
+-New RPC URL
+-Chain ID
+-Currency symbol
+-Block explorer URL
+
+
+
+Configure MetaMask:
+
+Open MetaMask.
+Enter the details:
+Network Name: Ganache
+New RPC URL: http://127.0.0.1:7545 (default Ganache RPC server)
+Chain ID: 1337 (default Ganache Chain ID)
+Symbol: ETH
+Block Explorer URL: (leave empty)
+
+
+9- Import Accounts from Ganache to MetaMask:
+Copy the private key of an account.
+In MetaMask, click on the account icon at the top right, then Import Account.
+Paste the private key and click Import.
+
+It will contain all the ETH's (FAKE ETH's for testing)
+
+
+10- Create frontend
+in js use code to connect web3 with metamask
+
+npm install -g http-server
+http-server
+
+
+
+
+
